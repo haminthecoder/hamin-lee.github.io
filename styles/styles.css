@@ -14,9 +14,23 @@ canvas {
   left:0;
   z-index:-99;
 }
+/* .parallax-wrapper {
+  height: 100vh;
+  width: 100vw;
+  padding-top:20vh;
+  box-sizing: border-box;
+}
+
+
+.regular-wrapper {
+  height: 100vh;
+  width: 100vw;
+  padding-top:20vh;
+} */
+
 .login-div {
-  max-width: 530px;
-  padding: 55px;
+  max-width: 630px;
+  padding: 45px;
   border-radius: 15px;
   color:white;
   background: rgba(8,8,8,0.7);
@@ -24,7 +38,7 @@ canvas {
 }
 
 .logo {
-  background-image: url("profile2.jpg");
+  background-image: url("../assets/profile2.jpg");
   background-size: cover;
   background-position: left 10px bottom -15px;
   width:300px;
@@ -58,6 +72,7 @@ canvas {
     max-width: 250px;
     max-height: 500px;
   }
+  
   .logo {
     width:150px;
     height:150px;
