@@ -1,0 +1,107 @@
+$primary-color: cornflowerblue;
+
+@mixin flexCenter {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    @include flexCenter();
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    min-height: 180px;
+    padding: 0;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.social-icons a {
+    padding: 1rem;
+}
+
+i {
+    color:#DDDDDD;
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    font-family: 'Menlo', monospace;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    color:$primary-color;
+}
+
+a:link, a:visited {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+}
+
+img {
+    padding: 0;
+    width: 28px;
+}
+
+.center {
+    display: inline-block;
+}
+
+.container {
+    flex: 1;
+    align-content: center;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.default-clock {
+    font-size: 1050%;
+    font-weight: 500;
+}
+
+.default-clock .second {
+    font-size: 4rem;
+}
+
+#greeting {
+    font-size: 300%;
+    margin-top: 1rem;
+}
+
+.med-btn {
+    margin-top: 4rem;
+    color: white;
+}
+
+.btn{
+    color: black;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    border-radius: .5rem;
+    font-size: 250%;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    color: #ffffff;
+    background-color: black;
+}
