@@ -3,8 +3,9 @@ html {
 }
 body {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: white;
+    background-color: black;
     height: 100vh;
     perspective: 1px;
     transform-style: preserve-3d;
@@ -25,21 +26,23 @@ body {
 }
 
 #techup-img {
-    width: 70%;
-    height: 70%;
-    border-radius: 1rem;
-    zoom: 1;
+    width: 60%;
+    height: 40%;
+    border-radius: 0.5rem;
+}
+
+#title {
+    font-size: 110%;
 }
 
 .parallax-wrapper::before {
     content: "";
     width: 100vw;
     height: 100vh;
-    margin-top: -3rem;
+    /* margin-top: -3rem; */
     top: 0;
     left: 0;
     background-image: url('../assets/galaxy1.jpg');
-    background-size: cover;
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px) scale(2);
@@ -48,22 +51,35 @@ body {
 .regular-wrapper {
     width: 100vw;
     height: 100vh;
-    padding-top: 20vh;
+    top: 0;
+    padding-top: 8vh;
     background-image: url('../assets/galaxy2.jpg');
-    z-index: 2;
+    z-index: 1;
+    box-sizing: border-box;
     position: relative;
 
 }
 
 .content {
     margin: 0 auto;
-    padding: 50px;
-    width: 60%;
+    padding: 20px;
+    width: 65%;
     background: rgba(8,8,8,0.7);
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
 }
 
+
+
 h1 {
     z-index: 3;
+}
+
+@media (max-width: 600px) {
+    img {
+        display:none;
+    }
+    #title {
+        font-size: 100%;
+    }
 }
