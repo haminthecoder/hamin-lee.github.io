@@ -38,6 +38,16 @@ canvas {
   font-size: 20px;
 }
 
+#name {
+  font-size: 2/5rem;
+}
+
+i {
+  color:white;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
 @media (max-width: 650px) and (min-width: 400px) {
   .login-div {
     padding: 1.5rem;
@@ -72,7 +82,7 @@ canvas {
   .login-div {
     padding: 1rem;
     max-width: 300px;
-    max-height: 600px;
+    max-height: 550px;
   }
   
   .logo {
