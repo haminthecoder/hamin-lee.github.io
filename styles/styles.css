@@ -51,6 +51,7 @@ i {
 @media (max-width: 650px) and (min-width: 400px) {
   .login-div {
     padding: 1.5rem;
+    height: 95vh;
   }
 
   .logo {
